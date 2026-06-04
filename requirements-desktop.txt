@@ -1,0 +1,23 @@
+# DeepSeek Chat Desktop 依赖
+# 安装: pip install -r requirements-desktop.txt
+
+# Flask Web 框架（核心）
+Flask>=3.0
+
+# HTTP 请求库（用于余额查询等）
+requests>=2.31.0
+
+# OpenAI API 客户端
+openai>=1.0
+
+# YAML 配置解析
+PyYAML>=6.0
+
+# 原生桌面窗口包装
+pywebview>=4.0
+
+# 生成鲸鱼图标（仅构建 exe 时需要，运行时不需要）
+Pillow>=10.0
+
+# 打包 exe（仅构建时需要）
+pyinstaller>=6.0

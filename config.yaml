@@ -1,0 +1,27 @@
+api:
+  api_key: ${DEEPSEEK_API_KEY}
+  base_url: https://api.deepseek.com
+model:
+  name: deepseek-v4-flash
+  reasoning_effort: high
+  temperature: 0.7
+  max_tokens: null
+  thinking_enabled: true
+chat:
+  system_prompt: 你是一个专业、耐心的AI助手，帮助用户解答问题，提供信息，并且在对话中保持友好和专业的态度。当需要展示代码时，请使用标准 Markdown
+    代码块格式，明确标注语言类型（如 ```python、```javascript、```html、```css、```bash 等），并在代码前后用空行分隔，使代码块清晰可辨。数学公式相关的内容请严格使用latex,使用了
+    \(...\)（行内）和 \[...\]（显示）格式返回，便于在前端显示
+  save_history: true
+  history_dir: history
+memory:
+  enabled: true
+  file: memories.json
+  auto_apply: true
+ui:
+  theme: light
+  color_user: "\e[93m"
+  color_assistant: "\e[92m"
+  color_text: "\e[97m"
+  color_reset: "\e[0m"
+  color_info: "\e[96m"
+  show_token_usage: false
